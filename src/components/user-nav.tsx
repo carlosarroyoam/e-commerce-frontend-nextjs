@@ -46,7 +46,7 @@ const UserNav = () => {
         <Button variant="ghost" className="relative size-10 rounded-full">
           <Avatar className="size-10">
             <AvatarImage
-              src={`https://ui-avatars.com/api/?name=${session.first_name}%20${session.last_name}&format=svg`}
+              src={`https://ui-avatars.com/api/?name=${session.first_name}%20${session.last_name}&format=svg&background=d4d4d8`}
               alt={`${session.first_name}'s profile picture`}
             />
           </Avatar>
@@ -62,6 +62,8 @@ const UserNav = () => {
           </p>
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
+        <DropdownMenuItem>Account</DropdownMenuItem>
+        <DropdownMenuItem>Settings</DropdownMenuItem>
         <DropdownMenuItem onClick={() => logOut()}>Log out</DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

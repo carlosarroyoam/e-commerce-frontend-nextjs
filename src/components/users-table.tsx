@@ -73,7 +73,7 @@ const UsersTable = () => {
                 <TableCell>
                   <Avatar className="size-8">
                     <AvatarImage
-                      src={`https://ui-avatars.com/api/?name=${user.first_name}%20${user.last_name}&format=svg`}
+                      src={`https://ui-avatars.com/api/?name=${user.first_name}%20${user.last_name}&format=svg&background=d4d4d8`}
                       alt={`${user.first_name}'s profile picture`}
                     />
                   </Avatar>

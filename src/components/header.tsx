@@ -17,6 +17,22 @@ const Header = () => {
           <ul className="ml-16 flex items-center gap-8">
             <li>
               <Link
+                href="/dashboard"
+                className="text-sm font-medium tracking-tight hover:text-zinc-700"
+              >
+                Dashboard
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/dashboard/orders"
+                className="text-sm font-medium tracking-tight hover:text-zinc-700"
+              >
+                Orders
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/dashboard/products"
                 className="text-sm font-medium tracking-tight hover:text-zinc-700"
               >
