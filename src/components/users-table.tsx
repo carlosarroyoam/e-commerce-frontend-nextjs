@@ -1,7 +1,7 @@
 "use client";
 
-import { Pencil2Icon, TrashIcon } from "@radix-ui/react-icons";
 import { useQuery } from "@tanstack/react-query";
+import { PencilIcon, TrashIcon } from "lucide-react";
 
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
@@ -94,7 +94,7 @@ const UsersTable = () => {
                 </TableCell>
                 <TableCell className="flex gap-2">
                   <Button variant={"secondary"} size={"icon"}>
-                    <Pencil2Icon />
+                    <PencilIcon />
                   </Button>
                   <Button variant={"destructive"} size={"icon"}>
                     <TrashIcon />

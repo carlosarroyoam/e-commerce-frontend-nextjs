@@ -1,9 +1,9 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
-import { ExclamationTriangleIcon, ReloadIcon } from "@radix-ui/react-icons";
 import { useMutation } from "@tanstack/react-query";
 import { AxiosError } from "axios";
+import { RefreshCcwIcon, TriangleAlertIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 
@@ -134,14 +134,16 @@ const LoginForm = () => {
 
           <Button type="submit" className="w-full" disabled={isPending}>
             Log in
-            {isPending && <ReloadIcon className="ml-4 size-4 animate-spin" />}
+            {isPending && (
+              <RefreshCcwIcon className="ml-4 size-4 animate-spin" />
+            )}
           </Button>
         </form>
       </Form>
 
       {form.formState.errors.root ? (
         <Alert variant="destructive" className="mt-8">
-          <ExclamationTriangleIcon className="size-4" />
+          <TriangleAlertIcon className="size-4" />
           <AlertDescription>
             {form.formState.errors.root.message}
           </AlertDescription>

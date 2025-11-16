@@ -2,7 +2,7 @@ import { NextResponse, type NextRequest } from "next/server";
 
 const authRoutes = ["/auth/login", "/auth/forgot-password"];
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const isAuth = request.cookies.has("refresh_token");
 
   if (isAuth && authRoutes.includes(request.nextUrl.pathname)) {
